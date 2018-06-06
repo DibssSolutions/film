@@ -3,3 +3,7 @@ ProjectTitle: film
 PageList:
 - file: page.html
   ready: 50
+- file: news.html
+  ready: 50
+- file: movies.html
+  ready: 50
