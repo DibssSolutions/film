@@ -3,8 +3,8 @@ var config = require('../config');
 
 gulp.task('watch', 
     ['copy:watch',
-    
-    'nunjucks:watch',
+  
+    'html:watch',
     'sprite:svg:watch',
     'svgo:watch',
     'list-pages:watch',

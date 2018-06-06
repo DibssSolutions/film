@@ -9,3 +9,7 @@ PageList:
   ready: 50
 - file: about-the-company.html
   ready: 50
+- file: press.html
+  ready: 50
+- file: contacts.html
+  ready: 50

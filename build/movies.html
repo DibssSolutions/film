@@ -1,80 +1,57 @@
-<!doctype html>
-<html>
+---
+title: movies
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
 
-  <head>
-    <title>КИНОПРОДЮСЕРСКАЯ КОМПАНИЯ</title>
-    <link rel="shortcut icon" type="image/x-icon" href="http://renovatio.ru/bitrix/templates/renovations_rus/favicon.ico" />
-    <!-- Bootstrap -->
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/bootstrap.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/animate.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/style.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/press.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/fonts.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/media.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/owl.carousel.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/xoverlay.css" rel="stylesheet">
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/css/lightbox.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="http://renovatio.ru/bitrix/templates/.default/components/bitrix/menu/REN_TopMenu/style.css?1466973900581" type="text/css" data-template-style="true" rel="stylesheet" />
-    <link href="http://renovatio.ru/bitrix/templates/.default/components/bitrix/news.list/REN_TopSlider/style.css?1466973900150" type="text/css" data-template-style="true" rel="stylesheet" />
-    <link href="http://renovatio.ru/bitrix/templates/.default/components/bitrix/news.list/REN_MiniSlider/style.css?1466973900150" type="text/css" data-template-style="true" rel="stylesheet" />
-    <link href="http://renovatio.ru/bitrix/templates/.default/components/bitrix/news.list/REN_MainNews/style.css?1466973900150" type="text/css" data-template-style="true" rel="stylesheet" />
-    <link href="http://renovatio.ru/bitrix/templates/renovations_rus/template_styles.css?146902626011451" type="text/css" data-template-style="true" rel="stylesheet" /> </head>
-
-  <body>
-    <div id="panel"></div>
-    <nav>
-      <div class="navbar">
-        <div class="container-new">
-          <a class="navbar-brand" href="/" "><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/logo.png " alt=" "></a>
-			<div class="navbar-collapse navbar-responsive-collapse ">
+<div id="panel"></div>
+<nav>
+	<div class="navbar">
+		<div class="container-new">
+			<a class="navbar-brand" href="/""><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/logo.png" alt=""></a>
+			<div class="navbar-collapse navbar-responsive-collapse">
 				
-<ul class="nav navbar-nav pull-left ">
-	<h1 style="background-image: url(http://renovatio.ru/bitrix/templates/renovations_rus/img/kompany.jpg); ">Production holding company</h1>
-					<li><a href="/news/ ">Новости</a><span>|</span></li>
+<ul class="nav navbar-nav pull-left">
+	<h1 style="background-image: url(http://renovatio.ru/bitrix/templates/renovations_rus/img/kompany.jpg);">Production holding company</h1>
+					<li><a href="/news/">Новости</a><span>|</span></li>
 		
-			<li><a href="/movies/ " class="selected ">Фильмы</a><span>|</span></li>
+			<li><a href="/movies/" class="selected">Фильмы</a><span>|</span></li>
 		
-			<li><a href="/about-the-company/ ">О компании</a><span>|</span></li>
+			<li><a href="/about-the-company/">О компании</a><span>|</span></li>
 		
-			<li><a href="/press/ ">ПРЕССА</a><span>|</span></li>
+			<li><a href="/press/">ПРЕССА</a><span>|</span></li>
 		
-			<li><a href="/contacts/ ">Контакты</a><span>|</span></li>
+			<li><a href="/contacts/">Контакты</a><span>|</span></li>
 		
 
 </ul>
-				<div class="nav-right pull-right ">
-					<div class="nav-social-wrap ">
-						<div class="nav-social ">
-	<a target="_blank " href="http://www.facebook.com/RenovatioEnt ">
-		<i class="fa fa-facebook " aria-hidden="true "></i>
+				<div class="nav-right pull-right">
+					<div class="nav-social-wrap">
+						<div class="nav-social">
+	<a target="_blank" href="http://www.facebook.com/RenovatioEnt">
+		<i class="fa fa-facebook" aria-hidden="true"></i>
 	</a>
 </div>
-<div class="nav-social ">
-	<a target="_blank " href="http://www.twitter.com/RenovatioEnt ">
-		<i class="fa fa-twitter " aria-hidden="true "></i>
+<div class="nav-social">
+	<a target="_blank" href="http://www.twitter.com/RenovatioEnt">
+		<i class="fa fa-twitter" aria-hidden="true"></i>
 	</a>
 </div>
-<div class="nav-social ">
-	<a target="_blank " href="http://www.vk.com/RenovatioEnt ">
-		<i class="fa fa-bold " aria-hidden="true "></i>
+<div class="nav-social">
+	<a target="_blank" href="http://www.vk.com/RenovatioEnt">
+		<i class="fa fa-bold" aria-hidden="true"></i>
 	</a>
 </div>					</div>
-					<div class="nav-lang-wrap ">
+					<div class="nav-lang-wrap">
 						<p>
 
 
-			<a href=" /en/movies/index.php "
-	title="English ">English</a>&nbsp;
+			<a href="
+		/en/movies/index.php"
+	title="English">English</a>&nbsp;
 	
 
-			<span title="Русский "><b>Русский</b></span>&nbsp;
+			<span title="Русский"><b>Русский</b></span>&nbsp;
 	
 </p>
 
@@ -92,8 +69,8 @@
 
 
 
-<section id="movies ">
-	<div class="container-new container-p ">
+<section id="movies">
+	<div class="container-new container-p">
 
   <h2>
 Фильмы</h2>
@@ -123,30 +100,30 @@
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_418 ">
-	<a href="http://renovatio.ru/movies/temporary-difficulties.html ">
-			<img src="http://renovatio.ru/upload/iblock/89e/89e2b4f03dc5c5acb37e7b3c4e2885c1.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_418">
+	<a href="http://renovatio.ru/movies/temporary-difficulties.html">
+			<img src="http://renovatio.ru/upload/iblock/89e/89e2b4f03dc5c5acb37e7b3c4e2885c1.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>Временные трудности</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>октябрь 2018</p>
 			</div>
 		
-					<div class="movie-descr ">
+					<div class="movie-descr">
 				<p>У Саши Ковалёва была врожденная болезнь. Отец мальчика выбрал, как ему казалось, единственно правильный способ поставить сына на ноги — относиться к нему как к здоровому человеку. «Ты не больной — у тебя временные трудности».</p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				драма</p>
 			</div>
 		
-		<!--			<a target="_blank " href="https://www.youtube.com/watch?v=DsMlNg-tTVg ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
+		<!--			<a target="_blank" href="https://www.youtube.com/watch?v=DsMlNg-tTVg">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
 			</a>
-						<a target="_blank " href="https://www.youtube.com/watch?v=DsMlNg-tTVg ">
-			<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
+						<a target="_blank" href="https://www.youtube.com/watch?v=DsMlNg-tTVg">
+			<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
 		</a>
 		-->
 
@@ -162,7 +139,7 @@
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Георгий Малков, Владимир Поляков, Михаил Кучмент, Константин Елкин</p>
@@ -179,8 +156,8 @@
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment, Enjoy movies, RWV</p>
-				<a href="http://renovatio.ru/movies/temporary-difficulties.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/temporary-difficulties.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
@@ -209,21 +186,21 @@
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_424 ">
-	<a href="http://renovatio.ru/movies/guests.html ">
-			<img src="http://renovatio.ru/upload/iblock/88f/88f2d5c6a1a3a14bc6bbdf5573a02310.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_424">
+	<a href="http://renovatio.ru/movies/guests.html">
+			<img src="http://renovatio.ru/upload/iblock/88f/88f2d5c6a1a3a14bc6bbdf5573a02310.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>Гости</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>сентябрь 2018</p>
 			</div>
 		
-					<div class="movie-descr ">
+					<div class="movie-descr">
 				<p>Действия фильма происходят на безлюдном курорте в межсезонье. Героиня фильма, юная Катя, знакомится с компанией приезжих ребят, у которых есть особое развлечение – устраивать вечеринки в чужих пустующих домах. Катя знает подходящее место - старинная дача на побережье, хозяин которой давно уехал.</p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				ужасы</p>
 			</div>
@@ -242,7 +219,7 @@
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Георгий Малков, Владимир Поляков, Ольга Агеева, Сергей Агеев, Даниил Махорт</p>
@@ -257,8 +234,8 @@
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment & ЦПШ</p>
-				<a href="http://renovatio.ru/movies/guests.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/guests.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
@@ -266,24 +243,24 @@
 
 
 
-	<div class="modal fade " id="myModal_1667 " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
-        <div class="modal-dialog " role="document ">
-          <div class="modal-content ">
-            <div class="modal-header ">
-				<button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true "><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png " alt=" "></span></button>
+	<div class="modal fade" id="myModal_1667" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png" alt=""></span></button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
 				
 				
 
-<div id="bx_flv_player_1390721931_div " style="width: 550px; height: 300px; ">Загрузка плеера</div>
+<div id="bx_flv_player_1390721931_div" style="width: 550px; height: 300px;">Загрузка плеера</div>
 <script>
 window.bxPlayerOnloadbx_flv_player_1390721931 = function(config)
 {
 	if (typeof config != 'object')
 		config = {'file':'http://renovatio.ru/upload/iblock/64d/64d11ca2a468bbe196583d131886b841.mp4','height':'300','width':'550','dock':true,'id':'bx_flv_player_1390721931','controlbar':'bottom','players':[{'type':'html5'},{'type':'flash','src':'/bitrix/components/bitrix/player/mediaplayer/player'}],'logo.hide':'true','repeat':'list','provider':'video','abouttext':'1С-Битрикс: Медиа-плеер','aboutlink':'http://www.1c-bitrix.ru/products/cms/features/mediaplayer.php'};
 
-	jwplayer("bx_flv_player_1390721931_div ").setup(config);
+	jwplayer("bx_flv_player_1390721931_div").setup(config);
 
 	};
 
@@ -293,14 +270,14 @@ if (window.jwplayer) // jw script already loaded
 }
 else
 {
-	BX.addCustomEvent(window, "onPlayerJWScriptLoad ", function(){setTimeout(bxPlayerOnloadbx_flv_player_1390721931, 100);});
+	BX.addCustomEvent(window, "onPlayerJWScriptLoad", function(){setTimeout(bxPlayerOnloadbx_flv_player_1390721931, 100);});
 	if (!window.bPlayerJWScriptLoaded)
 	{
 		window.bPlayerJWScriptLoaded = true;
 		// load jw scripts once
 		BX.loadScript('http://renovatio.ru/bitrix/components/bitrix/player/mediaplayer/jwplayer.js', function(){setTimeout(function()
 		{
-			BX.onCustomEvent(window, "onPlayerJWScriptLoad ");
+			BX.onCustomEvent(window, "onPlayerJWScriptLoad");
 		}, 100);});
 	}
 }
@@ -310,24 +287,24 @@ else
           </div>
         </div>
       </div>
-				<div class="modal fade " id="myModal_1669 " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
-        <div class="modal-dialog " role="document ">
-          <div class="modal-content ">
-            <div class="modal-header ">
-				<button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true "><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png " alt=" "></span></button>
+				<div class="modal fade" id="myModal_1669" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png" alt=""></span></button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
 				
 
 
-<div id="bx_flv_player_1827531607_div " style="width: 550px; height: 300px; ">Загрузка плеера</div>
+<div id="bx_flv_player_1827531607_div" style="width: 550px; height: 300px;">Загрузка плеера</div>
 <script>
 window.bxPlayerOnloadbx_flv_player_1827531607 = function(config)
 {
 	if (typeof config != 'object')
 		config = {'file':'http://renovatio.ru/upload/iblock/a26/a2625af94af2581c924188cd1d7fe941.mp4','height':'300','width':'550','dock':true,'id':'bx_flv_player_1827531607','controlbar':'bottom','players':[{'type':'html5'},{'type':'flash','src':'/bitrix/components/bitrix/player/mediaplayer/player'}],'logo.hide':'true','repeat':'list','provider':'video','abouttext':'1С-Битрикс: Медиа-плеер','aboutlink':'http://www.1c-bitrix.ru/products/cms/features/mediaplayer.php'};
 
-	jwplayer("bx_flv_player_1827531607_div ").setup(config);
+	jwplayer("bx_flv_player_1827531607_div").setup(config);
 
 	};
 
@@ -337,14 +314,14 @@ if (window.jwplayer) // jw script already loaded
 }
 else
 {
-	BX.addCustomEvent(window, "onPlayerJWScriptLoad ", function(){setTimeout(bxPlayerOnloadbx_flv_player_1827531607, 100);});
+	BX.addCustomEvent(window, "onPlayerJWScriptLoad", function(){setTimeout(bxPlayerOnloadbx_flv_player_1827531607, 100);});
 	if (!window.bPlayerJWScriptLoaded)
 	{
 		window.bPlayerJWScriptLoaded = true;
 		// load jw scripts once
 		BX.loadScript('http://renovatio.ru/bitrix/components/bitrix/player/mediaplayer/jwplayer.js', function(){setTimeout(function()
 		{
-			BX.onCustomEvent(window, "onPlayerJWScriptLoad ");
+			BX.onCustomEvent(window, "onPlayerJWScriptLoad");
 		}, 100);});
 	}
 }
@@ -375,41 +352,41 @@ else
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_300 ">
-	<a href="http://renovatio.ru/movies/defenders.html ">
-			<img src="http://renovatio.ru/upload/iblock/fbb/fbb47a0c32cba67669c9a882dbce1b98.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_300">
+	<a href="http://renovatio.ru/movies/defenders.html">
+			<img src="http://renovatio.ru/upload/iblock/fbb/fbb47a0c32cba67669c9a882dbce1b98.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>Защитники</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>2017</p>
 			</div>
 		
-					<div class="movie-descr ">
-				<p><p style="text-align: justify; ">
+					<div class="movie-descr">
+				<p><p style="text-align: justify;">
 	 Во времена Холодной войны секретная организация «Патриот» создала отряд супергероев, в который вошли участники из различных советских республик. Долгие годы героям приходилось скрывать свою сущность, однако в тяжелые для страны времена они вновь берутся за дело.
 </p></p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				фантастика, боевик, приключения</p>
 			</div>
 		
-		<!--			<a target="_blank " href="https://www.youtube.com/watch?v=SvQcKj4Y9lc ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
+		<!--			<a target="_blank" href="https://www.youtube.com/watch?v=SvQcKj4Y9lc">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
 			</a>
-						<a target="_blank " href="https://www.youtube.com/watch?v=ghgw63cvAAk ">
-			<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
+						<a target="_blank" href="https://www.youtube.com/watch?v=ghgw63cvAAk">
+			<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
 		</a>
 		-->
 
 
-			<a data-toggle="modal " data-target="#myModal_1667 ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
+			<a data-toggle="modal" data-target="#myModal_1667">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
 			</a>
-							<a data-toggle="modal " data-target="#myModal_1669 ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
+							<a data-toggle="modal" data-target="#myModal_1669">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
 			</a>
 		
 
@@ -422,7 +399,7 @@ else
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Владимир Поляков, Сарик Анреасян, Гевонд Андреасян</p>
@@ -439,8 +416,8 @@ else
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment & Enjoy movies</p>
-				<a href="http://renovatio.ru/movies/defenders.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/defenders.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
@@ -469,23 +446,23 @@ else
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_302 ">
-	<a href="http://renovatio.ru/movies/in-the-port-of-cape-town-.html ">
-			<img src="http://renovatio.ru/upload/iblock/bd7/bd78bcfb56694b560eae6f5b8ddce84b.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_302">
+	<a href="http://renovatio.ru/movies/in-the-port-of-cape-town-.html">
+			<img src="http://renovatio.ru/upload/iblock/bd7/bd78bcfb56694b560eae6f5b8ddce84b.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>В Кейптаунском порту...</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>2018</p>
 			</div>
 		
-					<div class="movie-descr ">
-				<p><p style="text-align: justify; ">
+					<div class="movie-descr">
+				<p><p style="text-align: justify;">
 	 Александр Велединский, знаменитый режиссер и сценарист, опять удивит зрителя необыкновенным сюжетом, хитроумным сплетением человеческих судеб и характеров, неожиданной развязкой.
 </p></p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				драма</p>
 			</div>
@@ -504,7 +481,7 @@ else
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Владимир Поляков, Владимир Игнатьев, Рубен Дишдишян</p>
@@ -521,8 +498,8 @@ else
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment</p>
-				<a href="http://renovatio.ru/movies/in-the-port-of-cape-town-.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/in-the-port-of-cape-town-.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
@@ -530,24 +507,24 @@ else
 
 
 
-	<div class="modal fade " id="myModal_2112 " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
-        <div class="modal-dialog " role="document ">
-          <div class="modal-content ">
-            <div class="modal-header ">
-				<button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true "><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png " alt=" "></span></button>
+	<div class="modal fade" id="myModal_2112" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png" alt=""></span></button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
 				
 				
 
-<div id="bx_flv_player_151565908_div " style="width: 550px; height: 300px; ">Загрузка плеера</div>
+<div id="bx_flv_player_151565908_div" style="width: 550px; height: 300px;">Загрузка плеера</div>
 <script>
 window.bxPlayerOnloadbx_flv_player_151565908 = function(config)
 {
 	if (typeof config != 'object')
 		config = {'file':'http://renovatio.ru/upload/iblock/b3f/b3ff569cfc4811e4308e4b6c0d448ab6.mp4','height':'300','width':'550','dock':true,'id':'bx_flv_player_151565908','controlbar':'bottom','players':[{'type':'html5'},{'type':'flash','src':'/bitrix/components/bitrix/player/mediaplayer/player'}],'logo.hide':'true','repeat':'list','provider':'video','abouttext':'1С-Битрикс: Медиа-плеер','aboutlink':'http://www.1c-bitrix.ru/products/cms/features/mediaplayer.php'};
 
-	jwplayer("bx_flv_player_151565908_div ").setup(config);
+	jwplayer("bx_flv_player_151565908_div").setup(config);
 
 	};
 
@@ -557,14 +534,14 @@ if (window.jwplayer) // jw script already loaded
 }
 else
 {
-	BX.addCustomEvent(window, "onPlayerJWScriptLoad ", function(){setTimeout(bxPlayerOnloadbx_flv_player_151565908, 100);});
+	BX.addCustomEvent(window, "onPlayerJWScriptLoad", function(){setTimeout(bxPlayerOnloadbx_flv_player_151565908, 100);});
 	if (!window.bPlayerJWScriptLoaded)
 	{
 		window.bPlayerJWScriptLoaded = true;
 		// load jw scripts once
 		BX.loadScript('http://renovatio.ru/bitrix/components/bitrix/player/mediaplayer/jwplayer.js', function(){setTimeout(function()
 		{
-			BX.onCustomEvent(window, "onPlayerJWScriptLoad ");
+			BX.onCustomEvent(window, "onPlayerJWScriptLoad");
 		}, 100);});
 	}
 }
@@ -574,24 +551,24 @@ else
           </div>
         </div>
       </div>
-				<div class="modal fade " id="myModal_2113 " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
-        <div class="modal-dialog " role="document ">
-          <div class="modal-content ">
-            <div class="modal-header ">
-				<button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true "><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png " alt=" "></span></button>
+				<div class="modal fade" id="myModal_2113" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="http://renovatio.ru/bitrix/templates/renovations_rus/img/close-button.png" alt=""></span></button>
             </div>
-            <div class="modal-body ">
+            <div class="modal-body">
 				
 
 
-<div id="bx_flv_player_1377108874_div " style="width: 550px; height: 300px; ">Загрузка плеера</div>
+<div id="bx_flv_player_1377108874_div" style="width: 550px; height: 300px;">Загрузка плеера</div>
 <script>
 window.bxPlayerOnloadbx_flv_player_1377108874 = function(config)
 {
 	if (typeof config != 'object')
 		config = {'file':'http://renovatio.ru/upload/iblock/d41/d410532c8b9092552dbcba7b09260f14.mp4','height':'300','width':'550','dock':true,'id':'bx_flv_player_1377108874','controlbar':'bottom','players':[{'type':'html5'},{'type':'flash','src':'/bitrix/components/bitrix/player/mediaplayer/player'}],'logo.hide':'true','repeat':'list','provider':'video','abouttext':'1С-Битрикс: Медиа-плеер','aboutlink':'http://www.1c-bitrix.ru/products/cms/features/mediaplayer.php'};
 
-	jwplayer("bx_flv_player_1377108874_div ").setup(config);
+	jwplayer("bx_flv_player_1377108874_div").setup(config);
 
 	};
 
@@ -601,14 +578,14 @@ if (window.jwplayer) // jw script already loaded
 }
 else
 {
-	BX.addCustomEvent(window, "onPlayerJWScriptLoad ", function(){setTimeout(bxPlayerOnloadbx_flv_player_1377108874, 100);});
+	BX.addCustomEvent(window, "onPlayerJWScriptLoad", function(){setTimeout(bxPlayerOnloadbx_flv_player_1377108874, 100);});
 	if (!window.bPlayerJWScriptLoaded)
 	{
 		window.bPlayerJWScriptLoaded = true;
 		// load jw scripts once
 		BX.loadScript('http://renovatio.ru/bitrix/components/bitrix/player/mediaplayer/jwplayer.js', function(){setTimeout(function()
 		{
-			BX.onCustomEvent(window, "onPlayerJWScriptLoad ");
+			BX.onCustomEvent(window, "onPlayerJWScriptLoad");
 		}, 100);});
 	}
 }
@@ -639,39 +616,39 @@ else
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_375 ">
-	<a href="http://renovatio.ru/movies/santa-claus-battle-mages.html ">
-			<img src="http://renovatio.ru/upload/iblock/d3a/d3a32b378f71a5782c51b604c73e9643.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_375">
+	<a href="http://renovatio.ru/movies/santa-claus-battle-mages.html">
+			<img src="http://renovatio.ru/upload/iblock/d3a/d3a32b378f71a5782c51b604c73e9643.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>Дед Мороз. Битва магов</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>2016</p>
 			</div>
 		
-					<div class="movie-descr ">
+					<div class="movie-descr">
 				<p>«Дед Мороз. Битва магов» можно смело называть первой российской современной высокотехнологичной, высокобюджетной сказкой. Для детей всех возрастов – от 6 до 60. Ведь ярко рассказанная сказка не оставит равнодушным внутреннего ребенка в человеке любого возраста. </p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				фэнтези</p>
 			</div>
 		
-		<!--			<a target="_blank " href="https://www.youtube.com/watch?v=djObmetZd4c ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
+		<!--			<a target="_blank" href="https://www.youtube.com/watch?v=djObmetZd4c">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
 			</a>
-						<a target="_blank " href="https://www.youtube.com/watch?v=CAw9PArx-1I ">
-			<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
+						<a target="_blank" href="https://www.youtube.com/watch?v=CAw9PArx-1I">
+			<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
 		</a>
 		-->
 
 
-			<a data-toggle="modal " data-target="#myModal_2112 ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
+			<a data-toggle="modal" data-target="#myModal_2112">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #1</button>
 			</a>
-							<a data-toggle="modal " data-target="#myModal_2113 ">
-				<button class="btn-news btn-trailer ">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
+							<a data-toggle="modal" data-target="#myModal_2113">
+				<button class="btn-news btn-trailer">ТРЕЙЛЕР К ФИЛЬМУ #2</button>
 			</a>
 		
 
@@ -684,7 +661,7 @@ else
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Владимир Поляков, Георгий Малков, Лев Карасев</p>
@@ -701,8 +678,8 @@ else
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment & Ангел</p>
-				<a href="http://renovatio.ru/movies/santa-claus-battle-mages.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/santa-claus-battle-mages.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
@@ -731,23 +708,23 @@ else
 
 
 
-<div class="row movie-wrap " id="bx_3218110189_304 ">
-	<a href="/movies/elastic.html ">
-			<img src="http://renovatio.ru/upload/iblock/26a/26ac55d75c69678d42321c9fa756d087.jpg ">
+<div class="row movie-wrap" id="bx_3218110189_304">
+	<a href="/movies/elastic.html">
+			<img src="http://renovatio.ru/upload/iblock/26a/26ac55d75c69678d42321c9fa756d087.jpg">
 	</a>
-	<div class="center-movie ">
+	<div class="center-movie">
 		<h3><strong>Эластико</strong></h3>
-					<div class="movie-date ">
+					<div class="movie-date">
 				<p>2016</p>
 			</div>
 		
-					<div class="movie-descr ">
-				<p><p style="text-align: justify; ">
+					<div class="movie-descr">
+				<p><p style="text-align: justify;">
 	 Матвей&nbsp;—&nbsp;простой парень из&nbsp;провинциального города. &nbsp;От&nbsp;других Матвея отличают уникальные физические данные&nbsp;—&nbsp;крепкие ноги, мощные лёгкие, поразительная выносливость.
 </p></p>
 			</div>
 		
-					<div class="movie-genre ">
+					<div class="movie-genre">
 				<p><strong>Жанр:</strong>
 				спорт, мелодрама, криминал</p>
 			</div>
@@ -766,7 +743,7 @@ else
 
 
 	</div>
-	<div class="right-movie ">
+	<div class="right-movie">
 		<h4><strong>Создатели</strong></h4>
 						<p><strong>Продюсеры:</strong>
 					Владимир Поляов, Георгий Малков, Евгений Замалиев, Жаргал Бадмацыренов </p>
@@ -781,20 +758,20 @@ else
 		
 						<p><strong>Производство:</strong>
 					Renovatio Entertainment & Пятый Элемент</p>
-				<a href="http://renovatio.ru/movies/elastic.html ">
-			<button class="btn-news btn-movie ">Подробнее о фильме</button>
+				<a href="http://renovatio.ru/movies/elastic.html">
+			<button class="btn-news btn-movie">Подробнее о фильме</button>
 		</a>
 	</div>
 </div>
 
-	<br /><div class="navigation ">
-			<div class="navigation-arrows ">
-							<span class="disabled ">
-					<button class="btn-news btn-prev ">Предыдущая страница</button>
+	<br /><div class="navigation">
+			<div class="navigation-arrows">
+							<span class="disabled">
+					<button class="btn-news btn-prev">Предыдущая страница</button>
 				</span>
 						&nbsp;
-							<a href="http://renovatio.ru/movies/?PAGEN_1=2 " id="navigation_1_next_page ">
-					<button class="btn-news btn-next ">Следующая страница</button>
+							<a href="http://renovatio.ru/movies/?PAGEN_1=2" id="navigation_1_next_page">
+					<button class="btn-news btn-next">Следующая страница</button>
 				</a>
 					</div>
 
@@ -804,23 +781,23 @@ else
 </section>
 
 <footer>
-	<div class="container-new container-p ">
-		<div class="row ">
-			<div class="footer-l ">
+	<div class="container-new container-p">
+		<div class="row">
+			<div class="footer-l">
 				<h2>Партнеры</h2>
 <p>
- <a href="http://enjoy-movies.ru ">Enjoy Movies - кинокомпания</a>
+ <a href="http://enjoy-movies.ru">Enjoy Movies - кинокомпания</a>
 </p>
 <p>
- <a href="http://r-studios.ru ">R Studio - кинопроизводственный комплекс</a>
+ <a href="http://r-studios.ru">R Studio - кинопроизводственный комплекс</a>
 </p>
 <p>
- <a href="http://rnv-media.ru ">Renovatio TV - продюсерский центр</a>
+ <a href="http://rnv-media.ru">Renovatio TV - продюсерский центр</a>
 </p>
 <p>
- <a href="http://musictownrecords.ru ">Music Town Records - музыкальный лейбл</a>
+ <a href="http://musictownrecords.ru">Music Town Records - музыкальный лейбл</a>
 </p>			</div>
-			<div class="footer-c ">
+			<div class="footer-c">
 					<h2>Контакты</h2>
 <p>
 	109052, Россия, Москва
@@ -831,16 +808,15 @@ else
 	ул. Подъемная, 9
 </p>
 <p>
-	 Телефон: <a href="tel:+74953612690 ">+7(495)361-26-90</a>
+	 Телефон: <a href="tel:+74953612690">+7(495)361-26-90</a>
 </p>
 <p>
-	 e-mail: <a href="mailto:info@renovatio.ru ">info@renovatio.ru</a>
+	 e-mail: <a href="mailto:info@renovatio.ru">info@renovatio.ru</a>
 </p>			</div>
-			<div class="footer-r ">
+			<div class="footer-r">
 				<h2>Социальные сети</h2>
 <p>
-	<a href="https://www.instagram.com/renovatioent/ "><img alt="icons8-instagram-50(1).png " src="http://renovatio.ru/upload/medialibrary/2e1/2e1b238a64e961b873252d959662f4ea.png " title="icons8-instagram-50(1).png " width="50 " height="50
-            "></a><a href="https://www.facebook.com/RenovatioEnt/ "><img alt="icons8-facebook-48.png " src="http://renovatio.ru/upload/medialibrary/058/05823ec0745d990ff5ad5edafcfab1dd.png " title="icons8-facebook-48.png " width="48 " height="48 "></a><br>
+	<a href="https://www.instagram.com/renovatioent/"><img alt="icons8-instagram-50(1).png" src="http://renovatio.ru/upload/medialibrary/2e1/2e1b238a64e961b873252d959662f4ea.png" title="icons8-instagram-50(1).png" width="50" height="50"></a><a href="https://www.facebook.com/RenovatioEnt/"><img alt="icons8-facebook-48.png" src="http://renovatio.ru/upload/medialibrary/058/05823ec0745d990ff5ad5edafcfab1dd.png" title="icons8-facebook-48.png" width="48" height="48"></a><br>
 </p>
 <br>
 <p>
@@ -850,23 +826,9 @@ else
 	</div>
 </footer>
 
-<section id="copy ">
-	<div class="container-new container-p ">
+<section id="copy">
+	<div class="container-new container-p">
 		<p>&copy; 2010-2018 Renovatio Entertaiment. Все права защищены. All rights reserved.</p>	</div>
 </section>
 
-
-   
-    <!-- BEGIN scripts -->
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="http://renovatio.ru/bitrix/templates/renovations_rus/js/bootstrap.js "></script>
-   <script src="http://renovatio.ru/bitrix/templates/renovations_rus/js/owl.carousel.min.js "></script>
-   <script src="http://renovatio.ru/bitrix/templates/renovations_rus/js/scripts.js "></script>
-   <script src="http://renovatio.ru/bitrix/templates/renovations_rus/js/lightbox.js "></script>
-   <script src="http://renovatio.ru/bitrix/templates/renovations_rus/js/StackBlur.js "></script>
-    <!-- END scripts -->
-
-  </body>
-</html>
+{% endblock %}

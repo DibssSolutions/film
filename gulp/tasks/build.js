@@ -5,10 +5,10 @@ var config      = require('../config');
 function build(cb) {
     runSequence(
         'clean',
+        'html',
         'sprite:svg',
         'svgo',
         'sass',
-        'nunjucks',
         'webpack',
         'copy',
         'list-pages',

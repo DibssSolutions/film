@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var config = require('../config.js');
+var changed        = require('gulp-changed');
 
 gulp.task('copy:fonts', function () {
     return gulp
@@ -21,9 +22,16 @@ gulp.task('copy:lib', function () {
 
 gulp.task('copy:rootfiles', function () {
     return gulp
-        .src(config.src.root + '/*.*')
+        .src(config.src.templates + '/*.*')
         .pipe(gulp.dest(config.dest.root));
 });
+
+// gulp.task('copy:html', function () {
+//     return gulp
+//         .src([config.src.templates + '/**/[^_]*.html'])
+//         .pipe(changed(config.dest.root))
+//         .pipe(gulp.dest(config.dest.root));
+// });
 
 gulp.task('copy:img', function () {
     return gulp
@@ -36,7 +44,6 @@ gulp.task('copy:img', function () {
 
 gulp.task('copy', [
     'copy:img',
-    // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',
     'copy:fonts'
