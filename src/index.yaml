@@ -7,3 +7,5 @@ PageList:
   ready: 50
 - file: movies.html
   ready: 50
+- file: about-the-company.html
+  ready: 50
