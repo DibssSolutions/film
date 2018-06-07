@@ -5,7 +5,7 @@ var config      = require('../config');
 function build(cb) {
     runSequence(
         'clean',
-        'html',
+        'nunjucks',
         'sprite:svg',
         'svgo',
         'sass',

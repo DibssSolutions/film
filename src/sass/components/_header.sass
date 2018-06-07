@@ -1,0 +1,106 @@
+body 
+	padding: 0 15px 
+.container-new
+	max-width: 1200px
+	width: 100%
+header
+	+md
+		min-width: 320px
+		height: 320px
+header .bg-img
+	+md
+		height: 320px
+header .container-new
+	+md
+		height: 320px
+header .container-new, .owl-carousel, .owl-carousel .owl-stage-outer
+	+md
+		height: 320px
+.navbar-collapse
+	+sm
+		text-align: center
+		width: 100%
+		position: absolute
+		// right: -800px
+		top: 90px
+		padding: 20px
+.navbar-brand
+	+sm
+		margin-left: 0
+.navbar-nav h1
+	+sm
+		display: none
+.pull-left, .pull-right
+	+sm
+		float: none !important
+.nav-right
+	+sm
+		text-align: center
+.navbar-nav
+	+sm
+		margin: 0
+		padding-top: 0
+	+sm
+		li
+			float: none
+			a
+				margin: 0
+			span
+				display: none
+.nav-right
+	+sm
+		margin-right: 0
+		display: flex
+		justify-content: center
+		flex-direction: column-reverse
+.menu-mobile-cross
+	display: none
+	+sm
+		display: inline-block
+		position: absolute
+		top: 28px
+		right: 20px
+		width: 33px
+		height: 33px
+		span
+			position: absolute
+			top: 5px
+			width: 33px
+			height: 3px
+			margin-bottom: 10px
+			background-color: #fff
+			cursor: pointer
+			transition: transform 0.5s
+			.is-open &
+				transform: rotate(-45deg)
+				background-color: #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 10px
+				width: 33px
+				height: 3px
+				margin-bottom: 10px
+				background-color: #fff
+				cursor: pointer
+				transition: transform 0.5s
+				.is-open &
+					transform: rotate(45deg)
+					top: 10px
+					background-color: #fff	
+			&:after
+				content: ''
+				position: absolute
+				top: 21px 
+				width: 33px
+				height: 3px
+				margin-bottom: 10px
+				background-color: #fff
+				cursor: pointer
+				transition: top, opacity, background-color 0.3s
+				.is-open &
+					opacity: 0
+					top: 0
+					background-color: #fff
+.navbar
+	margin: 0 -15px 
