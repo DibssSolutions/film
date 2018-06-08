@@ -1,70 +1,129 @@
 body 
-	padding: 0 15px 
+	padding: 0 15px
+
 .container-new
 	max-width: 1200px
 	width: 100%
+
 header
+	min-width: 290px
+	overflow: hidden
 	+md
-		min-width: 320px
-		height: 320px
-header .bg-img
-	+md
-		height: 320px
-header .container-new
-	+md
-		height: 320px
-header .container-new, .owl-carousel, .owl-carousel .owl-stage-outer
-	+md
-		height: 320px
+		min-width: 290px
+		height: 400px
+	.bg-img
+		+md
+			height: 400px
+		+sm
+			height: 290px
+		+r(450)
+			height: 200px
+	.container-new
+		+md
+			height: 400px
+		+sm
+			height: 290px
+		+r(450)
+			height: 200px
+	.container-new, .owl-carousel, .owl-carousel .owl-stage-outer
+		+md
+			height: 400px
+		+sm
+			height: 290px
+		+r(450)
+			height: 200px
+	+sm
+		height: 290px
+	+r(450)
+		height: 200px
+
 .navbar-collapse
-	+sm
+	+md
 		text-align: center
-		width: 100%
+		// width: 100%
 		position: absolute
-		// right: -800px
+		right: -200px
 		top: 90px
-		padding: 20px
+		padding: 20px 30px
+		transition: transform 0.5s
+		opacity: 0
+		&.is-open
+			transform: translateX(-200px)
+			opacity: 1
 .navbar-brand
-	+sm
-		margin-left: 0
-.navbar-nav h1
-	+sm
-		display: none
+	+md
+		margin-left: 15px
+
 .pull-left, .pull-right
-	+sm
+	+md
 		float: none !important
+
 .nav-right
-	+sm
+	+md
 		text-align: center
+
 .navbar-nav
-	+sm
+	+md
 		margin: 0
 		padding-top: 0
-	+sm
+		h1
+			display: none
+	+md
 		li
 			float: none
 			a
 				margin: 0
 			span
 				display: none
+
 .nav-right
-	+sm
+	+md
 		margin-right: 0
 		display: flex
 		justify-content: center
 		flex-direction: column-reverse
+
 .menu-mobile-cross
 	display: none
-	+sm
+	+md
 		display: inline-block
 		position: absolute
 		top: 28px
-		right: 20px
+		right: 15px
 		width: 33px
 		height: 33px
+		&.is-open
+			&:before
+				transform: rotate(-45deg)
+				top: 10px
+				background-color: #fff
+			&:after
+				top: 10px 
+				transform: rotate(45deg)
+				background-color: #fff	
+				
+			span
+				top: 10px
+				opacity: 0
+				top: 0
+				background-color: #fff
 		span
 			position: absolute
-			top: 5px
+			top: 10px
+			width: 33px
+			height: 3px
+			margin-bottom: 10px
+			background-color: #fff
+			cursor: pointer
+			transition: opacity 0.3s
+			
+			&.is-open 
+				transform: rotate(-45deg)
+				background-color: #fff
+		&:before
+			content: ''
+			position: absolute
+			top: 0
 			width: 33px
 			height: 3px
 			margin-bottom: 10px
@@ -72,35 +131,35 @@ header .container-new, .owl-carousel, .owl-carousel .owl-stage-outer
 			cursor: pointer
 			transition: transform 0.5s
 			.is-open &
-				transform: rotate(-45deg)
-				background-color: #fff
-			&:before
-				content: ''
-				position: absolute
+				transform: rotate(45deg)
 				top: 10px
-				width: 33px
-				height: 3px
-				margin-bottom: 10px
+				background-color: #fff	
+		&:after
+			content: ''
+			position: absolute
+			top: 21px 
+			width: 33px
+			height: 3px
+			margin-bottom: 10px
+			background-color: #fff
+			cursor: pointer
+			transition: transform 0.5s
+			.is-open &
+				opacity: 0
+				top: 0
 				background-color: #fff
-				cursor: pointer
-				transition: transform 0.5s
-				.is-open &
-					transform: rotate(45deg)
-					top: 10px
-					background-color: #fff	
-			&:after
-				content: ''
-				position: absolute
-				top: 21px 
-				width: 33px
-				height: 3px
-				margin-bottom: 10px
-				background-color: #fff
-				cursor: pointer
-				transition: top, opacity, background-color 0.3s
-				.is-open &
-					opacity: 0
-					top: 0
-					background-color: #fff
+
 .navbar
-	margin: 0 -15px 
+	margin: 0 -15px
+	
+.owl-carousel .owl-item img
+	+r(1200)
+		object-fit: cover
+		object-position: 50% 50%
+		height: 500px
+	+md
+		height: 400px
+	+sm
+		height: 290px
+	+r(450)
+		height: 200px
