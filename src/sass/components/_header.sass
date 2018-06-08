@@ -1,5 +1,13 @@
 body 
 	padding: 0 15px
+	&.open
+		position: fixed
+		left: 0
+		top: 0
+		width: 100vw
+		height: 100vh 
+	+md
+		font-size: 12px
 
 .container-new
 	max-width: 1200px
@@ -40,27 +48,27 @@ header
 .navbar-collapse
 	+md
 		text-align: center
-		// width: 100%
+		width: 100%
 		position: absolute
-		right: -200px
-		top: 90px
+		height: 100vh
+		// right: -200px
+		top: 55px
 		padding: 20px 30px
-		transition: transform 0.5s
+		transition: opacity 0.5s
 		opacity: 0
+		visibility: hidden
 		&.is-open
-			transform: translateX(-200px)
 			opacity: 1
+			visibility: visible
 .navbar-brand
 	+md
 		margin-left: 15px
+	img
+		width: 45px
 
 .pull-left, .pull-right
 	+md
 		float: none !important
-
-.nav-right
-	+md
-		text-align: center
 
 .navbar-nav
 	+md
@@ -73,22 +81,28 @@ header
 			float: none
 			a
 				margin: 0
+				padding: 6px 0 10px 0 
 			span
 				display: none
+ul li a.selected, ul li a:hover
+	+md
+		padding-bottom: 8px
 
 .nav-right
 	+md
+		text-align: center
 		margin-right: 0
 		display: flex
 		justify-content: center
 		flex-direction: column-reverse
+		padding-top: 10px
 
 .menu-mobile-cross
 	display: none
 	+md
 		display: inline-block
 		position: absolute
-		top: 28px
+		top: 14px
 		right: 15px
 		width: 33px
 		height: 33px
@@ -151,6 +165,8 @@ header
 
 .navbar
 	margin: 0 -15px
+	+md
+		height: 55px
 	
 .owl-carousel .owl-item img
 	+r(1200)

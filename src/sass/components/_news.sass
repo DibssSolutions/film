@@ -1,0 +1,91 @@
+#news
+	.container-new
+		+md
+			padding: 0 45px 35px
+		+sm
+			padding: 0 15px 35px
+// .container-p
+// 	+md
+// 		padding: 0 45px
+// 	+sm
+// 		padding: 0 15px 35px
+	 
+.big-row 
+	.news-left
+		max-width: 673px
+		width: 66.24%
+		+md
+			width: 100%
+			max-width: 100%
+			margin-bottom: 10px
+		+r(450)
+			height: 300px
+	.news-right
+		width: 32.58%
+		margin-left: 0.8882%
+		+md
+			display: flex
+			width: 100%
+			justify-content: space-between
+		+sm
+			flex-direction: column
+	.news-right-top
+		width: 100%
+		object-fit: cover
+		+md
+			width: 49%
+		+sm
+			width: 100%
+			margin-bottom: 10px
+		+r(450)
+			height: 200px
+	.news-right-bottom
+		+md
+			margin-top: 0
+			width: 49%
+		+sm
+			width: 100%
+			margin-bottom: 10px
+.news-right-bottom
+	width: 100%
+.big-row
+	.news-right-top
+		img
+			object-fit: cover
+.x-right
+	.xoverlay-box
+		right: -100%
+.xoverlay
+	+r(450)
+		.x-img-main
+			height: 300px
+		
+.small-row
+	+sm
+		display: flex
+		flex-direction: column-reverse
+	.news-left
+		width: 33.589%
+		+md
+			width: 49%
+		+sm
+			width: 100%
+			margin-bottom: 10px
+	.news-right
+		width: 65%
+		+md
+			width: 49%
+		+sm
+			width: 100%
+		+r(450)
+			height: 200px
+		img
+			object-fit: cover
+.btn-news
+	+sm
+		width: 250px
+		line-height: 40px
+		font-size: 16px
+		margin-top: 25px
+			
+
