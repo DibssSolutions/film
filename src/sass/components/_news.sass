@@ -10,45 +10,47 @@
 // 	+sm
 // 		padding: 0 15px 35px
 	 
-.big-row 
+.big-row
+	+md
+		margin-bottom: 0
 	.news-left
-		// max-width: 673px
-		// width: 66.24%
 		width: calc(100% - 341px) 
 		+md
 			width: 100%
 			max-width: 100%
 			margin-bottom: 10px
+		+sm
+			height: 400px
 		+r(450)
 			height: 300px
 	.news-right
-		// width: 32.58%
-		// margin-left: 0.8882%
 		+md
 			display: flex
 			width: 100%
 			flex-direction: column
 	.news-right-top
-		// width: 100%
-		// object-fit: cover
-		// +md
-		// 	width: 49%
 		+md
 			width: 100%
-			margin-bottom: 10px
+			// margin-bottom: 10px
 		+r(450)
 			height: 200px
 	.news-right-bottom
-		// +md
-		// 	margin-top: 0
-		// 	width: 49%
 		+md
 			width: 100%
 			margin-bottom: 10px
-// .news-right-bottom
-// 	width: 100%
+		+sm
+			padding: 5px
+		h3
+			+sm
+				font-size: 16px
+	.xoverlay-data
+		+sm
+			padding: 10px 15px
+		h3
+			+sm
+				font-size: 16px
 .big-row
-	+sm
+	+md
 		margin-bottom: 0
 	.news-right-top
 		img
@@ -57,37 +59,52 @@
 	.xoverlay-box
 		right: -100%
 .xoverlay
+	+sm
+		.x-img-main
+			height: 400px
 	+r(450)
 		.x-img-main
 			height: 300px
 		
 .small-row
 	+md
+		margin-bottom: 0
 		display: flex
 		flex-direction: column-reverse
 	.news-left
-		// width: 33.589%
-		// +md
-		// 	width: 49%
 		+md
 			width: 100%
 			margin-bottom: 10px
+		+sm
+			padding: 5px
+		h3
+			font-size: 16px
 	.news-right
-		// width: 65%
-		width: calc(100% - 354px) 
-		// +md
-		// 	width: 49%
+		width: calc(100% - 354px)
 		+md
 			width: 100%
+			margin-bottom: 10px
 		+r(450)
 			height: 200px
 		img
 			object-fit: cover
 .btn-news
+	+lg
+		max-width: 390px
+		width: 100%
+		padding: 26px 10px
+		line-height: 1.1
 	+sm
-		width: 250px
-		line-height: 40px
+		width: 100%
 		font-size: 16px
-		margin-top: 25px
+		padding: 13px 10px
+
+.btn-prev
+	+md
+		margin: 15px 0 0
+
+.btn-next
+	+md
+		margin-top: 15px
 			
 

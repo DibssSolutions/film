@@ -1,0 +1,59 @@
+
+div.news-detail 
+	img.detail_picture
+		+md
+			float: none
+
+.news-detail
+	h3
+		+sm
+			font-size: 20px
+	table
+		a
+			font-size: 14px
+	p
+		i
+			font-size: 14px
+.prod-who
+	p
+		font-size: 15px
+
+.news-date-time
+	font-size: 14px
+	+md
+		display: block
+
+#about-prod
+	+md
+		table
+			width: 100%
+			& td:first-child
+				width: 50%
+				+sm
+					display: block
+			& td:last-child
+				width: 50%
+				+sm
+					display: block				
+	.gallery
+		// font-size: 0
+		+lg
+			text-align: center
+	.detail_picture
+		+md
+			margin-right: 0
+		+sm
+			max-width: 296px
+			object-fit: cover
+			width: 100% 
+
+#about > .container-new > p > a
+	+sm
+		padding: 13px 45px
+		font-size: 16px
+		display: block
+		width: 100%
+	
+#about > .container-new > p
+	+sm
+		width: 100%
