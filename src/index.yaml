@@ -13,3 +13,9 @@ PageList:
   ready: 50
 - file: contacts.html
   ready: 50
+- file: news-video.html
+  ready: 50
+- file: news-img.html
+  ready: 50
+- file: news-img-gallery.html
+  ready: 50

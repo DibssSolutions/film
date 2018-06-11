@@ -1,14 +1,3 @@
-body 
-	padding: 0 15px
-	&.open
-		position: fixed
-		left: 0
-		top: 0
-		width: 100vw
-		height: 100vh 
-	+md
-		font-size: 12px
-
 .container-new
 	max-width: 1200px
 	width: 100%
@@ -64,7 +53,8 @@ header
 	+md
 		margin-left: 15px
 	img
-		width: 45px
+		+md
+			width: 45px
 
 .pull-left, .pull-right
 	+md
