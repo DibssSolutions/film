@@ -1,14 +1,9 @@
 #news
+	margin: 0 -15px 
 	.container-new
 		+md
-			padding: 0 45px 35px
-		+sm
-			padding: 0 15px 35px
-// .container-p
-// 	+md
-// 		padding: 0 45px
-// 	+sm
-// 		padding: 0 15px 35px
+			padding-top: 20px
+			padding-bottom: 20px
 	 
 .big-row
 	+md
@@ -31,24 +26,32 @@
 	.news-right-top
 		+md
 			width: 100%
-			// margin-bottom: 10px
 		+r(450)
 			height: 200px
 	.news-right-bottom
 		+md
 			width: 100%
 			margin-bottom: 10px
-		+sm
-			padding: 5px
+			padding: 10px 10px 39px
+			height: auto
 		h3
+			+lg
+				line-height: 1.5
 			+sm
 				font-size: 16px
+		p
+			+md
+				margin: 10px 0 
 	.xoverlay-data
 		+sm
 			padding: 10px 15px
 		h3
 			+sm
-				font-size: 16px
+				font-size: 14px
+.date
+	p
+		margin-top: 0
+		
 .big-row
 	+md
 		margin-bottom: 0
@@ -59,12 +62,14 @@
 	.xoverlay-box
 		right: -100%
 .xoverlay
+	+md
+		height: 100%
 	+sm
 		.x-img-main
-			height: 400px
+			height: auto
 	+r(450)
 		.x-img-main
-			height: 300px
+			height: auto
 		
 .small-row
 	+md
@@ -75,10 +80,17 @@
 		+md
 			width: 100%
 			margin-bottom: 10px
-		+sm
-			padding: 5px
+			padding: 10px 10px 39px
+			height: auto
 		h3
-			font-size: 16px
+			+lg
+				line-height: 1.3
+				width: 100%
+			+sm
+				font-size: 16px
+		p
+			+md
+				margin: 10px 0 
 	.news-right
 		width: calc(100% - 354px)
 		+md
@@ -97,6 +109,7 @@
 	+md
 		font-size: 16px
 		padding: 13px 10px
+		margin-top: 15px
 	+sm
 		max-width: 100%
 

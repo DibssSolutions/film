@@ -25,3 +25,5 @@ PageList:
   ready: 50
 - file: movies-link.html
   ready: 50
+- file: movies-link2.html
+  ready: 50
