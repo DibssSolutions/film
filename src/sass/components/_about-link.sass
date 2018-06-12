@@ -24,17 +24,21 @@ div.news-detail
 		display: block
 
 #about-prod
-	+md
-		table
+	table
+		+md
 			width: 100%
-			& td:first-child
+		& td:first-child
+			+md
 				width: 50%
-				+sm
-					display: block
-			& td:last-child
+			+sm
+				display: block
+				width: 100%
+		& td:last-child
+			+md
 				width: 50%
-				+sm
-					display: block				
+			+sm
+				display: block
+				width: 100%			
 	.gallery
 		// font-size: 0
 		+lg
@@ -48,10 +52,11 @@ div.news-detail
 			width: 100% 
 
 #about > .container-new > p > a
-	+sm
+	+md
 		padding: 13px 45px
 		font-size: 16px
 		display: block
+	+sm
 		width: 100%
 	
 #about > .container-new > p
