@@ -27,3 +27,5 @@ PageList:
   ready: 50
 - file: movies-link2.html
   ready: 50
+- file: news-img2.html
+  ready: 50
