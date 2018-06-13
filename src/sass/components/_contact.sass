@@ -10,6 +10,10 @@
 			margin: 0 0 10px 0 
 
 .contacts-left
+	+md
+		float: none
+		text-align: center
+		margin: 0 auto 
 	+sm
 		width: 100%
 	h3
@@ -17,18 +21,25 @@
 			margin-top: 10px
 			font-size: 18px
 	p
+		+md
+			width: auto
 		+sm
 			font-size: 14px
 
 .contacts-social
-	margin-top: 30px
+	+md
+		margin-top: 30px
 
 .map
-	width: 100%
-	max-width: 710px
-	height: 440px
+	+lg
+		width: 100%
+		max-width: calc(100% - 300px)
+		height: 440px
 	+md
 		height: 310px
+		float: none
+		margin: 15px auto 0
+		max-width: 700px
 	+sm
 		border: 2px #fff solid
 		height: 304px
@@ -37,8 +48,10 @@
 
 .map > ymaps,
 .map > ymaps > ymaps
-	+md
+	+lg
 		width: 100% !important
+		height: 430px !important
+	+md
 		height: 300px !important
 
 		
