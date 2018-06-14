@@ -50,6 +50,7 @@ header
 		&.is-open
 			opacity: 1
 			visibility: visible
+
 .navbar-brand
 	+md
 		margin-left: 15px
@@ -160,14 +161,16 @@ ul li a.selected, ul li a:hover
 	+md
 		height: 55px
 	
-.owl-carousel .owl-item img
-	+r(1200)
-		object-fit: cover
-		object-position: 50% 50%
-		height: 500px
-	+md
-		height: 400px
-	+sm
-		height: 290px
-	+r(450)
-		height: 200px
+.owl-carousel 
+	.owl-item
+		img
+			+lg
+				object-fit: cover
+				object-position: 50% 50%
+				height: 500px
+			+md
+				height: 400px
+			+sm
+				height: 290px
+			+r(450)
+				height: 200px

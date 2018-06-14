@@ -28,6 +28,8 @@
 			width: 100%
 		+r(450)
 			height: 200px
+		img
+			object-fit: cover
 	.news-right-bottom
 		+md
 			width: 100%
@@ -49,18 +51,18 @@
 			+sm
 				font-size: 14px
 .date
-	p
-		margin-top: 0
-		
-.big-row
 	+md
-		margin-bottom: 0
-	.news-right-top
-		img
-			object-fit: cover
+		p
+			margin-top: 0
+		
 .x-right
+	&:hover
+		.xoverlay-box
+			height: auto
 	.xoverlay-box
 		right: -100%
+		+lg
+			height: auto
 		+sm
 			right: 0
 .xoverlay
@@ -69,10 +71,7 @@
 	+sm
 		.x-img-main
 			height: auto
-	+r(450)
-		.x-img-main
-			height: auto
-		
+
 .small-row
 	+md
 		margin-bottom: 0

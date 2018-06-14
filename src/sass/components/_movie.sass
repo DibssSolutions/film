@@ -52,7 +52,30 @@
 #movies
 	margin: 0 -15px
 	.movie-wrap
-		margin-top: 0
+		+sm
+			margin-bottom: 15px
+		a:first-child
+			+lg
+				display: block
+				width: 30.31%
+			+md
+				margin: 0 auto 
+			+sm
+				width: 50%
+		a
+			img
+				+lg
+					width: 100%
+					display: block
+				+md
+					float: none
+	.btn-trailer
+		+lg
+			font-size: 15px
+			width: 100%
+			padding: 9px
+		+md
+			margin-top: 15px
 	.btn-movie
 		+lg
 			width: 100%
@@ -65,32 +88,6 @@
 	h5
 		+md
 			text-align: center
-
-.movie-wrap
-	+sm
-		margin-bottom: 15px
-	a:first-child
-		+lg
-			display: block
-			width: 30.31%
-		+md
-			margin: 0 auto 
-		+sm
-			width: 50%
-	a
-		img
-			+lg
-				width: 100%
-				display: block
-			+md
-				float: none
-	.btn-trailer
-		+lg
-			font-size: 15px
-			width: 100%
-			padding: 9px
-		+md
-			margin-top: 15px
 
 .movie-descr
 	p
@@ -119,26 +116,33 @@
 	visibility: hidden
 	opacity: 0
 	+vertical
+	+sm
+		background-color: #1A1A1A
 	&.in
 		opacity: 1
 		visibility: visible
 		.modal-dialog
 			display: inline-block
 			vertical-align: middle
-			width: 90%
-			max-width: 600px
+			// width: 96%
+			// max-width: 600px
 			margin: 0
+			+sm
+				width: 96%
 	.close
 		+sm
-			margin-top: 0
-			margin-right: 15px
+			margin-top: -25px
+			margin-right: 0
 			position: relative
-			z-index: 10
+			z-index: 1000
 		img
 			+sm
 				width: 20px
+	.modal-body
+		padding: 0 
 	.modal-body > div
 		margin: 0 auto
+		
 
 .img-block
 	+sm
