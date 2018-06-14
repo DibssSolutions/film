@@ -28,6 +28,10 @@
 		+sm
 			height: auto
 		img
+			+lg
+				object-fit: cover
+				left: 50% !important
+				transform: translateX(-50%)
 			+md
 				object-fit: cover
 				width: 100%
@@ -105,8 +109,8 @@
 		img
 			+lg
 				object-fit: cover
-				// left: 50%
-				// transform: translateX(-50%)
+				left: 50% !important
+				transform: translateX(-50%)
 			+md
 				width: 100%
 				position: relative
@@ -116,7 +120,7 @@
 	+lg
 		max-width: 390px
 		width: 100%
-		padding: 26px 10px
+		padding: 30px 10px
 		line-height: 1.1
 	+md
 		font-size: 16px
