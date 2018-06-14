@@ -1,5 +1,4 @@
 #news
-	margin: 0 -15px 
 	.container-new
 		+md
 			padding-top: 20px
@@ -26,10 +25,14 @@
 	.news-right-top
 		+md
 			width: 100%
-		+r(450)
-			height: 200px
+		+sm
+			height: auto
 		img
-			object-fit: cover
+			+md
+				object-fit: cover
+				width: 100%
+				position: relative
+				height: 100%
 	.news-right-bottom
 		+md
 			width: 100%
@@ -97,10 +100,18 @@
 		+md
 			width: 100%
 			margin-bottom: 10px
-		+r(450)
-			height: 200px
+		+sm
+			height: auto
 		img
-			object-fit: cover
+			+lg
+				object-fit: cover
+				// left: 50%
+				// transform: translateX(-50%)
+			+md
+				width: 100%
+				position: relative
+				height: 100%
+				
 .btn-news
 	+lg
 		max-width: 390px

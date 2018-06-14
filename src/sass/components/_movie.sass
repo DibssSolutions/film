@@ -50,7 +50,7 @@
 			margin-bottom: 10px
 
 #movies
-	margin: 0 -15px
+	// margin: 0 -15px
 	.movie-wrap
 		+sm
 			margin-bottom: 15px
@@ -115,20 +115,22 @@
 	display: block
 	visibility: hidden
 	opacity: 0
-	+vertical
+	+md
+		+vertical
 	+sm
 		background-color: #1A1A1A
 	&.in
 		opacity: 1
 		visibility: visible
 		.modal-dialog
-			display: inline-block
-			vertical-align: middle
-			// width: 96%
-			// max-width: 600px
-			margin: 0
+			+md
+				display: inline-block
+				vertical-align: middle
+				margin: 0
 			+sm
 				width: 96%
+				overflow: auto
+				padding-top: 28px
 	.close
 		+sm
 			margin-top: -25px
@@ -139,9 +141,11 @@
 			+sm
 				width: 20px
 	.modal-body
-		padding: 0 
+		+md
+			padding: 0 
 	.modal-body > div
-		margin: 0 auto
+		+md
+			margin: 0 auto
 		
 
 .img-block

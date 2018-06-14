@@ -12,6 +12,5 @@ btn.click(function() {
     menuBtn.removeClass('is-open');
  		menu.removeClass('is-open');
  		body.removeClass('open');
-  }
-   	
+  }   	
 });

@@ -1,5 +1,4 @@
 #about
-	margin: 0 -15px 
 	.container-new
 		+md
 			padding-top: 20px
@@ -39,20 +38,22 @@
 			font-size: 16px
 			margin-bottom: 15px
 .prod-block
-	vertical-align: top
-	width: 33%
-	padding: 1.5%
-	margin: 0
-	vertical-align: top
+	+lg
+		width: 33%
+		padding: 1.5%
+		margin: 0
+		vertical-align: top
 	+md
 		width: 49.7%
 	+sm
 		width: 100%
 	img
-		display: block
-		width: 100%
-		height: 436px
-		object-fit: cover
+		+lg
+			display: block
+			max-width: 100%
+			height: 436px
+			margin: 0 auto 
+			object-fit: cover
 		+md
 			object-position: top
 	p
