@@ -8,7 +8,8 @@
 	+md
 		margin-bottom: 0
 	.news-left
-		width: calc(100% - 341px) 
+		+lg
+			width: calc(100% - 341px) 
 		+md
 			width: 100%
 			max-width: 100%
@@ -64,8 +65,9 @@
 		
 .x-right
 	&:hover
-		.xoverlay-box
-			height: auto
+		+lg
+			.xoverlay-box
+				height: auto
 	.xoverlay-box
 		right: -100%
 		+lg
@@ -100,7 +102,8 @@
 			+md
 				margin: 10px 0 
 	.news-right
-		width: calc(100% - 354px)
+		+lg
+			width: calc(100% - 354px)
 		+md
 			width: 100%
 			margin-bottom: 10px
