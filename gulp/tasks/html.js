@@ -1,4 +1,3 @@
-
 var config = require('../config.js');
 const gulp = require('gulp');
 var gulpif         = require('gulp-if');
@@ -9,7 +8,7 @@ gulp.task('html', function () {
 	console.log('hello');
     return gulp
     	.src(config.src.templates + '/**/[^_]*.html')
-        .pipe(gulpif(true, changed(config.dest.html))) 
+        .pipe(gulpif(true, changed(config.dest.html)))
         .pipe(gulp.dest(config.dest.html));
 });
 
