@@ -1,5 +1,23 @@
 body
-	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+	min-width: 320px
+	&.open
+		position: fixed
+		left: 0
+		top: 0
+		width: 100vw
+		height: 100vh
+	+lg
+		padding: 0 15px 
+	+md
+		font-size: 13px
 
+h1
+	+sm
+		font-size: 20px
+		margin: 0 0 10px 0
+
+.container-p
+	+md
+		padding: 0 45px
+	+sm
+		padding: 0 15px
