@@ -1,21 +1,52 @@
 .movie-block
+	height: auto
 	+lg
 		height: 100%
 		margin: 0 20px
+	+sm
+		width: 180px !important
 .movie-block:last-child
 	+lg
-		margin-right: 20px
+		margin-right: 0
 .movie-block:first-child
 	+lg
-		margin-left: 20px
+		margin-left: 0
 .movie-block p
 	margin-bottom: 30px
 	+md
 		font-size: 14px
 #movies
+	.row.slick-slider
+		height: 190px
+		+lg
+			height: auto
 	.container-new
-		// +lg
-		// 	padding-bottom: 0
 		+md
 			padding-top: 20px
-			padding-bottom: 20px 
+			padding-bottom: 20px
+	.slick-slide 
+		img
+			max-width: 100%
+			margin: 0 auto 
+			+sm
+				width: 100%
+	.slick-dots
+		margin: 0 auto
+		li
+			display: inline-block
+			margin: 0 10px
+			button
+				border-radius: 50%
+				font-size: 0
+				width: 10px
+				height: 10px
+				padding: 0
+				background: #AEB4C0
+		.slick-active
+			button
+				background: #FBFFFC
+				padding: 0
+	ul
+		-webkit-padding-start: 0px !important
+		padding: 0
+		
