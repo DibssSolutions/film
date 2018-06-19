@@ -1,4 +1,4 @@
-import 'slick-carousel';
+import '../slick.js';
 
 $('.js-slider-wrap > .row').slick({
   arrows: false,
